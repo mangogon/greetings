@@ -1,0 +1,44 @@
+<!DOctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='css/bootstrap.min.css'/>
+        <title>Rita</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <form action="#" method="get" class="form-inline">
+                <div class="form-group">
+                    <button type="button" class="search-btn btn btn-primary" item-id="1">Push me</button>
+                    <button type="button" class="search-btn btn btn-primary" item-id="2">Push me</button>
+                    <button type="button" class="search-btn btn btn-primary" item-id="3">Push me</button>
+                    <button type="button" class="search-btn btn btn-primary" item-id="4">Push me</button>
+                </div>
+            </form>
+            
+            <!-- Intial replics go here -->
+            <div id="results"></div>
+            
+            <!-- Answers go here -->
+            <div id="answer"></div>  
+            <div id ="answering"></div>
+
+        </div>
+
+        
+        <script id="say-template" type="text/x-handlebars-template">
+        <div class="say" item-id="{{id}}"><b>I say:</b> - {{say}}</div>
+        </script>
+        
+
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/handlebars-v4.0.5.js"></script>
+        <script src="index.js"></script>
+        <script src="database.js"></script>
+    </body>
+
+</html>
